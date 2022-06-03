@@ -1,0 +1,11 @@
+{
+  "name": "healthchecks",
+  "version": "1.0.0",
+  "description": "Server to test health checks",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module",
+  "author": "Steren Giannini steren@google.com",
+  "license": "Apache-2.0"
+}
