@@ -21,7 +21,7 @@ const server = http.createServer(async (req, res) => {
 
   console.log(`Will return ${status} in ${delaySeconds} seconds after ${failures} failures (currently at ${failureCounter}/${failures} failures).`);
 
-  if (failureCounter < failures) {
+  if (failureCounter < failures-1) {
     failureCounter++;
     res.statusCode = 500;
     res.end();
