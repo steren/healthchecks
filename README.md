@@ -1,4 +1,4 @@
-# healthchecks
+# Health check tester
 A Node.js app to test startup and liveness health checks
 
 ## How to use
