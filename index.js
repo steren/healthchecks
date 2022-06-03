@@ -1,4 +1,4 @@
-rl uimport * as http from 'node:http';
+import * as http from 'node:http';
 
 const port = process.env.SERVER_PORT || process.env.PORT || 8080;
 const serverDelay = parseInt(process.env.SERVER_DELAY_SECONDS) || 0;
