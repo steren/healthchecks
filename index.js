@@ -1,4 +1,4 @@
-import * as http from 'node:http';
+rl uimport * as http from 'node:http';
 
 const port = process.env.SERVER_PORT || process.env.PORT || 8080;
 const serverDelay = parseInt(process.env.SERVER_DELAY_SECONDS) || 0;
@@ -24,14 +24,14 @@ const server = http.createServer(async (req, res) => {
   if (failureCounter < failures-1) {
     failureCounter++;
     res.statusCode = 500;
-    res.end();
+    res.end('Failure');
     return;
   }
   failureCounter = 0;
 
   setTimeout(() => {
     res.statusCode = status;
-    res.end();
+    res.end(`${status}`);
   }, delaySeconds * 1000);
 
 });
